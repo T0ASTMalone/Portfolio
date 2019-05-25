@@ -8,12 +8,12 @@ body {
 }
 
 section {
-    background-color:white;
-    color: black;
     display: flex;
     flex-direction: column;
-    padding: 30px 0px;
-    min-height: 400px;
+    padding-top: 60px;
+    min-height: 450px;
+    margin: auto;
+    transition: ease all  1s;
 }
 
 nav {
@@ -21,7 +21,6 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: hsl(0, 0%, 87%);
     padding: 0px 10px;
     
 }
@@ -32,19 +31,43 @@ nav {
     align-items: center;
 }
 
-
 main {
     margin-top: 12%;
 }
+/*link stuff*/
+li {
+    list-style: none;
+}
 
-#projects {
-    background-color: #ddd;
+a:visited, a:link {
     color: black;
+    text-decoration: none;
+}
+
+.contact-link {
+    display: inline;
+}
+
+/*font-sizes*/
+p, 
+button,
+li {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button {
+    display: inline-block;
+    background: none;
+	border: none;
+	padding: 0;
+    align-self: center;
 }
 
 .title {
-    font-size: 40px;
-    
+    font-size: 50px;
+    margin: 10px;
+    letter-spacing: 7px;
 }
 
 p {
@@ -56,16 +79,28 @@ p {
     width: 250px;
 }
 
-.project-container {
+.project-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.content-container {
     padding: 0px 10px;
     display: flex;
-    justify-content: space-between;
-    overflow: hidden;
+    flex-direction: column;
+    align-self: center;
+    max-width: 700px;
+    margin-top: 16px;
+}
+
+#project {
+    flex-direction: row;
 }
 
 .project-info {
     padding-left: 10px;
 }
+
 
 .screen-shots {
     width: 30%;
@@ -73,11 +108,7 @@ p {
 }
 
 img {
-    width: 5%;
-}
-
-.technologies {
-    width: 5%;
+    width: 20px;
 }
 
 .contacts {
@@ -86,29 +117,11 @@ img {
     padding: 0;
 }
 
-.contact-link {
-    display: inline;
-}
 
-footer {
-    background-color: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
+/*add media query that adds margins to the left and right of content-container*/
 
-footer > p {
-    margin: 0;
-    text-align: center;
-}
-
-button {
-    display: inline-block;
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-    align-self: center;
+@media only screen and (min-width: 718px) {
+    section {
+        width: 80vw;
+    }
 }

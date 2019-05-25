@@ -27,40 +27,44 @@
     <main role="main">
         <section id="about-me">
             <h2 class="title">About Me</h2> 
-
-            <p class="info">My name is Miguel Angel Ponce. I am a Full Stack Web Developer based in Denver, Colorado. I love learning new technologies, crave productivity, and enjoy solving problems.</p>
-            <!--This button will show bio-->
-            <button id="learn-more">Learn More</button>
-            <!--paragraph containing bio will be hidden-->
-            <p class="info">My interests include technology, music production, fitness, and art. I have always enjoy figuring out how things work, and using that knowledge to create something new. Technology is such a big part of my life. I use software and the internet everyday, to make music, to make art, to help me stay fit, and for so many other things. I wanted to learn how the technology I use everyday works, so I learned to code. </p>
+            <div class="content-container" id="my-info">
+                <p>My name is Miguel Angel Ponce. I am a Full Stack Web Developer based in Denver, Colorado. I love learning new technologies, crave productivity, and enjoy solving problems.</p>
+                <!--This button will show bio-->
+                <button id="learn-more">Learn More</button>
+                <!--paragraph containing bio will be hidden-->
+            </div>
         </section>
                 
         <section id="projects">
             <h2 class="title">Projects</h2>
-            <div class="project-container">
-                <img class="screen-shots"src="Project-screenshots/Quiz-app/Start-screen.PNG" alt="start-screen-screenshot">
+            <div class="content-container" id="project">
+                <img class="screen-shots"src="Project-screenshots/Quiz-app/Start-screen.PNG" alt="start-screen-screenshot"> 
                 <div class="project-info">
                     <!--link to live app-->
-                    <a href="https://t0astmalone.github.io/Music-Production-Quiz/"><h2>Music Production Quiz</h2></a> 
+                    <a href="https://t0astmalone.github.io/Music-Production-Quiz/"><h2 class="project-title">Music Production Quiz</h2></a> 
                     <!--links to GitHub repository-->
-                    <a href="https://github.com/T0ASTMalone/Music-Production-Quiz"><img src="icons/GitHub-Mark-32px.png" alt="github-icon"></a> 
+                    
                     <p>Music Production Quiz is an app meant to test the users knowledge of basic music production tools.</p>
                     <img class="technologies" src="Technologies/html5.png" alt="html-icon">
                     <img class="technologies" src="Technologies/css-3.png" alt="css-icon">
                     <img class="technologies" src="Technologies/javascript-736400_960_720.png" alt="js-icon">
+                    <a href="https://github.com/T0ASTMalone/Music-Production-Quiz"><img src="icons/GitHub-Mark-32px.png" alt="github-icon"></a> 
                 </div>
             </div>
         </section>
             
         <section id="contact">
             <h2 class="title">Contact</h2>
-            <p>Wanna Chat?</p>
+            <div class="content-container">
+                <p>Wanna Chat?</p>
 
-            <ul class="contacts">
-                <li class="contact-link"><a href="https://www.linkedin.com/in/miguel-ponce-b5160111a/ ">linkedin</a></li>
-                <li class="contact-link"><a href="https://github.com/T0ASTMalone ">github</a></li>
-                <li class="contact-link"><a href="mailto:miguelaponce258@gmail.com">email</a></li>
-            </ul>  
+                <ul class="contacts">
+                    <li class="contact-link"><a href="https://www.linkedin.com/in/miguel-ponce-b5160111a/ ">linkedin</a></li>
+                    <li class="contact-link"><a href="https://github.com/T0ASTMalone ">github</a></li>
+                    <li class="contact-link"><a href="mailto:miguelaponce258@gmail.com">email</a></li>
+                </ul>  
+            </div>
+            
         </section>
     </main>
 </body>
@@ -69,5 +73,4 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script src="index.js"></script>
-
 </html>

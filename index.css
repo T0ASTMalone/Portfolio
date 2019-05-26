@@ -46,6 +46,7 @@ a:visited, a:link {
 
 .contact-link {
     display: inline;
+    padding: 10px;
 }
 
 /*font-sizes*/
@@ -103,17 +104,21 @@ p {
 
 
 .screen-shots {
-    width: 30%;
-    height: 30%;
+    display: none;
 }
 
-img {
+.show {
+    display: block;
+    width: 125px;
+    height: 200px;
+}
+
+.icon {
     width: 20px;
 }
 
 .contacts {
     align-self: center;
-    justify-self: flex-end;
     padding: 0;
 }
 
@@ -123,5 +128,10 @@ img {
 @media only screen and (min-width: 718px) {
     section {
         width: 80vw;
+    }
+
+    .show {
+        width: 200px;
+        height: 320px;
     }
 }

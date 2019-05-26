@@ -1,16 +1,48 @@
 'use strict';
 
 function learnMore() {
-    $('#learn-more').on('click', function(){
+    $('#about-me').on('click', '#learn-more', function(){
         $(this).hide();
-        $("<p>My interests include technology, music production, fitness, and art. I have always enjoy figuring out how things work, and using that knowledge to create something new. Technology is such a big part of my life. I use software and the internet everyday, to make music, to make art, to help me stay fit, and for so many other things. I wanted to learn how the technology I use everyday works, so I learned to code. </p>")
-        .hide().appendTo('#my-info').slideDown('slow');
+        $("<p id='bio'>My interests include technology, music production, fitness, and art. I have always enjoy figuring out how things work, and using that knowledge to create something new. Technology is such a big part of my life. I use software and the internet everyday, to make music, to make art, to help me stay fit, and for so many other things. I wanted to learn how the technology I use everyday works, so I learned to code. </p><button class ='button' id='learn-less'>Unlearn</button>")
+        .hide().appendTo('#my-info').slideDown(1000);
+    });
+    $('#about-me').on('click', '#learn-less', function(){
+        $(this).slideUp( function(){
+            $('#bio').slideUp( function(){
+                $('#learn-more').slideDown();
+            });
+        });
     });
 }
 
 
+let slideIndex;
+
+function carousel() {
+    $('.screen-shots').on('click', function(){
+        let project = $(this).attr('class').split(" ")[0];
+        slideIndex = $(`.${project}`).index($(this)) + 1;
+        displayScreenShots(slideIndex += 1, project);
+    });
+}
+
+function displayScreenShots(n, app) {
+    let current = $(`.${app}`);
+    if (n > current.length){
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = current.length;
+    }
+    for (let i = 0; i < current.length; i++) {
+        current.removeClass('show');
+    }
+    $(`.${app}:eq(${slideIndex - 1})`).addClass('show');
+}
+
 function loaded() {
     learnMore();
+    carousel();
 }
 
 $(loaded);

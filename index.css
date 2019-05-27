@@ -24,7 +24,7 @@ section {
     padding: 100px 20px 0 20px;
     min-height: 450px;
     margin: auto;
-    transition: ease all  1s;
+    overflow: hidden;
     
 }
 
@@ -94,9 +94,8 @@ button {
     display: inline-block;
     background: none;
 	border: none;
-	padding: 0;
+    padding: 0;
     align-self: center;
-
 }
 
 
@@ -135,6 +134,10 @@ p {
     margin-top: 16px;
 }
 
+#contact-me {
+    overflow:hidden;
+}
+
 #project {
     flex-direction: row;
     margin-top: 26px;
@@ -164,15 +167,19 @@ p {
 .text-slide {
     overflow: hidden;
     display: flex;
-    text-align: center;
+    align-self: center;
+    width: 600px;
 }
 
 .item-1, 
 .item-2, 
 .item-3 {
+    text-align: center;
     position: relative;
-    display: inline;
-	animation-duration: 20s;
+    display: inline-block;
+    margin: auto;
+    width: 200px;
+	animation-duration: 25s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
@@ -190,20 +197,20 @@ p {
 }
 
 @keyframes anim-1 {
-	0%, 20% { left: -100%; opacity: 0; }
-    33%,50% { left: 25%; opacity: 1; }
-    50%, 100% { left: 110%; opacity: 0; }
+	0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%, 25% { left: 33.33%; opacity: 1; }
+    33.33%, 100% { left: 100%; opacity: 0; }
 }
 
 @keyframes anim-2 {
     0%, 33.33% { left: -100%; opacity: 0; }
-    41.63%, 58.29% { left: 25%; opacity: 1; }
+    41.63%, 58.29% { left: 0%; opacity: 1; }
     66.66%, 100% { left: 110%; opacity: 0; }
 }
 
 @keyframes anim-3 {
-    0%, 33% { left: -100%; opacity: 0; }
-    74.96%, 91.62% { left: 25%; opacity: 1; }
+    0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: -33.33%; opacity: 1; }
     100% { left: 110%; opacity: 0; }
 }
 
@@ -253,6 +260,10 @@ p {
     #about-me, #projects {
         padding-bottom: 160px;
     }
+
+    #project {
+        height: 380px;
+    }
 }
 
 
@@ -262,8 +273,6 @@ p {
     }
 
 }
-
-
 /*add media query that adds margins to the left and right of content-container*/
 
 @media only screen and (min-width: 718px) {
@@ -273,9 +282,6 @@ p {
 
     section {
         padding: 100px 0 0 0;
-    }
-
-    section, .nested-nav {
         width: 80vw;
     }
 
@@ -294,11 +300,14 @@ p {
         height: 370px;
     }
 
+    #project-info {
+        margin-bottom: 10px;
+    }
+
     .icon {
         width: 40px;
     }
 
-    
     p, 
     button,
     li,
@@ -306,5 +315,19 @@ p {
         font-size: 20px;
     }
 
+    .text-slide {
+        width: 1200px;
+    }
 
+    .item-1,
+    .item-2,
+    .item-3 {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nested-nav {
+        width: 80vw;
+    }
 }

@@ -2,27 +2,48 @@
     box-sizing: border-box;
 }
 
+html {
+    padding-bottom: 400px;
+}
+
 body {
     font-family: 'Muli', sans-serif;
     margin: 0;
+    //background-image: linear-gradient(#3aafa9, #2b7a78);
+    background-color: #2C42BC;
+    color: #feffff;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding: 100px 0 0 0;
     min-height: 450px;
     margin: auto;
     transition: ease all  1s;
+    
 }
 
+
 nav {
+    /*background-image: linear-gradient(to right, rgb(58, 175, 169), rgb(58, 175, 169, .5), rgb(58, 175, 169));*/
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 0px 10px;
-    
+    padding: 0px 20px;
+    height: 100px;
+    background-color: rgb(44, 66, 188, .5);
+    box-shadow: 0 0 10px 10px rgb(44, 66, 188, .5); 
+}
+
+ul {
+    padding: 0;
+}
+
+#scrollTo {
+    font-weight: bold;
+    width: 75px;
 }
 
 .nested-nav {
@@ -39,9 +60,15 @@ li {
     list-style: none;
 }
 
+
 a:visited, a:link {
-    color: black;
+    color: White;
+    font-weight: bold;
     text-decoration: none;
+}
+
+a:hover, button:hover {
+    color: #E56EA5;
 }
 
 .contact-link {
@@ -53,8 +80,10 @@ a:visited, a:link {
 p, 
 button,
 li {
+    color: white;
     font-size: 16px;
-    line-height: 24px;
+    font-weight: bolder;
+    line-height: 27px;
 }
 
 button {
@@ -63,10 +92,20 @@ button {
 	border: none;
 	padding: 0;
     align-self: center;
+
+}
+
+button:hover {
+    color: #E56EA5;
+}
+
+.title, #name, button {
+    color: #94EEDB;
 }
 
 .title {
-    font-size: 50px;
+    font-size: 80px;
+    font-weight: bold;
     margin: 10px;
     letter-spacing: 7px;
 }
@@ -78,15 +117,17 @@ p {
 
 .info {
     width: 250px;
+    transition: ease all  1s;
 }
 
 .project-title {
+    font-weight: bolder;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .content-container {
-    padding: 0px 10px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -96,6 +137,7 @@ p {
 
 #project {
     flex-direction: row;
+    margin-top: 26px;
 }
 
 .project-info {
@@ -104,7 +146,13 @@ p {
 
 
 .screen-shots {
+    vertical-align: top;
     display: none;
+    transition: ease all  1s;
+}
+
+.screen-shots:hover{
+    box-shadow: 3px 3px #94EEDB;
 }
 
 .show {
@@ -122,10 +170,59 @@ p {
     padding: 0;
 }
 
+@media only screen and (max-width: 320px) {
+    #name {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 0 10px;
+        justify-content: space-around;
+        height: 100px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    p, 
+    button,
+    li {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .icon {
+        width: 20px;
+    }
+}
+
+@media only screen and (min-height: 640px){
+    #about-me, #projects {
+        padding-bottom: 160px;
+    }
+}
+
+
+@media only screen and (min-height: 810px){
+    #about-me, #projects {
+        padding-bottom: 247px;
+    }
+}
+
 
 /*add media query that adds margins to the left and right of content-container*/
 
 @media only screen and (min-width: 718px) {
+    html {
+        padding-bottom: 700px;
+    }
+
     section {
         width: 80vw;
     }
@@ -134,4 +231,22 @@ p {
         width: 200px;
         height: 320px;
     }
+
+    #scrollTo {
+        font-weight: bold;
+        width: 90px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    
+    p, 
+    button,
+    li {
+        font-size: 20px;
+    }
+
+
 }

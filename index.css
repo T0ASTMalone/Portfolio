@@ -12,7 +12,7 @@ body {
 section {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding: 100px 10px 0px 10px;
     min-height: 450px;
     margin: auto;
 }
@@ -41,6 +41,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+}
+
+.scroll-link {
+    text-align: right;
 }
 
 main {
@@ -125,9 +129,52 @@ img {
 
 /*media query that adds margins to the left and right of content-container*/
 
+@media only screen and (max-width: 320px) {
+    #name {
+        width: 180px;
+    }
+
+    nav {
+        padding: 0 10px;
+        justify-content: space-around;
+        height: 100px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .icon {
+        width: 20px;
+    }
+}
+
+/*add media query that adds margins to the left and right of content-container*/
+
 @media only screen and (min-width: 718px) {
-    section {
-        width: 75vw;
+    html {
+        padding-bottom: 700px;
+    }
+
+    .nested-nav {
+        margin: auto;
+    }
+
+    section, .nested-nav {
+        width: 80vw;
+    }
+
+    .show {
+        width: 200px;
+        height: 320px;
+    }
+
+    #scrollTo {
+        width: 90px;
+    }
+
+    .icon {
+        width: 40px;
     }
 
 }

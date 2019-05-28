@@ -5,22 +5,22 @@ function scrollTo() {
         let aid = $(this).attr('href');
         $('html, body').animate({scrollTop: $(aid).offset().top}, 2000);
     });
-   
 }
 
 function learnMore() {
     $('#about-me').on('click', '#learn-more', function(){
-        $(this).slideUp(1000).prop('disabled', true);
+        $(this).prop('disabled', true).hide();
         $("<p id='bio' class='active'>My interests include technology, music production, fitness, and art. I have always enjoy figuring out how things work, and using that knowledge to create something new. Technology is such a big part of my life. I use software and the internet everyday, to make music, to make art, to help me stay fit, and for so many other things. I wanted to learn how the technology I use everyday works, so I learned to code. </p><button class ='button' id='learn-less'>Unlearn</button>")
         .hide().appendTo('#my-info').slideDown(1000);
     });
     $('#about-me').on('click', '#learn-less', function(){
-        $('button').slideUp(function(){
+        $('button').hide(function(){
             $('.active').slideUp(1000, function(){
                 $('.active').removeClass('active');
                 $('#learn-more').slideDown(1000).prop('disabled', false);
             });
         });
+        $(this).remove();
     });
 }
 

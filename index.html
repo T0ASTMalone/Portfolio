@@ -4,52 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Wireframe</title>
+    <title>Miguel Ponce | Full Stack Web Developer</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     
 
 </head>
 <body>
-    <nav role="navigation">
+    <nav>
         <div class="nested-nav">
             <h1 id="name">Miguel Angel Ponce</h1>
-
             <ul id="scrollTo">
                 <li><a class="scrollLink" href="#about-me">About Me</a></li>
                 <li><a class="scrollLink" href="#projects">Projects</a></li>
                 <li><a class="scrollLink" href="#contact">Contact</a></li>
             </ul>
-        </div>
-        
+        </div> 
     </nav>
 
-    <main role="main">
+    <main>
         <section id="about-me">
             <h2 class="title">About Me</h2> 
             <div class="content-container" id="my-info">
-                <p>My name is Miguel Angel Ponce. I am a Full Stack Web Developer based in Denver, Colorado. I love learning new technologies, crave productivity, and enjoy solving problems.</p>
-                <!--This button will show bio-->
-                <button class="button" id="learn-more">Learn More</button>
-                <!--paragraph containing bio will be hidden-->
+                <p>My name is Miguel Angel Ponce. I am a Full Stack Web Developer based in Denver, Colorado. I love learning new technologies, crave productivity, and enjoy solving problems with HTML, CSS, JavaScript, & jQuery.</p>
+                <button class="button active" id="learn-more">Learn More</button>
             </div>
         </section>
                 
-
-
         <section id="projects">
             <h2 class="title">Projects</h2>
             <div class="content-container" id="project">
-                    <img class="quiz screen-shots show"  src="Project-screenshots/Quiz-app/Start-screen.PNG" alt="start-screen-screenshot"> 
-                    <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Quiz-screen.PNG" alt="/Quiz-screen-screenshot"> 
-                    <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Feedback-screen.PNG" alt="Feedback-screen-screenshot"> 
-                    <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Final-score-screen.PNG" alt="Final-score-screen-screenshot">  
-                    
+                <img class="quiz screen-shots show"  src="Project-screenshots/Quiz-app/Start-screen.PNG" alt="start-screen-screenshot"> 
+                <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Quiz-screen.PNG" alt="/Quiz-screen-screenshot"> 
+                <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Feedback-screen.PNG" alt="Feedback-screen-screenshot"> 
+                <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Final-score-screen.PNG" alt="Final-score-screen-screenshot">  
                 <div class="project-info">
-                    <!--link to live app-->
-                    <a href="https://t0astmalone.github.io/Music-Production-Quiz/"><span class="project-title">Music Production Quiz</span></a> 
-                    <!--links to GitHub repository-->
-                        
+                    <a href="https://t0astmalone.github.io/Music-Production-Quiz/"><span class="project-title">Music Production Quiz</span></a>   
                     <p>Music Production Quiz is an app meant to test the users knowledge of basic music production tools.</p>
                     <img class="icon" src="Technologies/html5.png" alt="html-icon">
                     <img class="icon" src="Technologies/css-3.png" alt="css-icon">
@@ -63,12 +53,10 @@
             <h2 class="title">Contact</h2>
             <div class="content-container" id="contact-me">
                 <div class="text-slide">
-                 <p class="item-1">Wanna Chat?</p>
-                 <p class="item-2">Wanna See My Work?</p>
-                 <p class="item-3">Wanna Work Together?</p>   
+                    <p class="item-1">Wanna Chat?</p>
+                    <p class="item-2">Wanna Work Together?</p>  
+                    <p class="item-3">Wanna See My Work?</p>
                 </div>
-                
-
                 <ul class="contacts">
                     <li class="contact-link"><a href="mailto:miguelaponce258@gmail.com"><img class="icon" src="icons/Gmail.png" alt="gmail-icon"></a></li>
                     <li class="contact-link"><a href="https://www.linkedin.com/in/miguel-ponce-b5160111a/ "><img class="icon" src="icons/linkedin.png" alt="linkedin-icon"></a></li>
@@ -76,11 +64,13 @@
                 </ul>  
             </div>
         </section>
+
     </main>
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.js" 
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-<script src="index.js"></script>
 </html>

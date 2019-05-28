@@ -9,7 +9,6 @@ html {
 body {
     font-family: 'Muli', sans-serif;
     margin: 0;
-    /*background-image: linear-gradient(#3aafa9, #2b7a78);*/
     background-color: #2C42BC;
     color: #feffff;
 }
@@ -25,7 +24,6 @@ section {
     min-height: 450px;
     margin: auto;
     overflow: hidden;
-    
 }
 
 
@@ -34,7 +32,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0px 20px;
+    padding: 0 20px;
     height: 100px;
     background-color: rgb(44, 66, 188, .5);
     box-shadow: 0 0 10px 10px rgb(44, 66, 188, .5); 
@@ -164,6 +162,16 @@ p {
     height: 200px;
 }
 
+.icon {
+    width: 20px;
+}
+
+.contacts {
+    align-self: center;
+    padding: 0;
+}
+
+
 .text-slide {
     overflow: hidden;
     display: flex;
@@ -179,49 +187,39 @@ p {
     display: inline-block;
     margin: auto;
     width: 200px;
-	animation-duration: 25s;
+	animation-duration: 15s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
 
 .item-1{
-	animation-name: anim-1;
+	animation-name: Gmail;
 }
 
 .item-2{
-	animation-name: anim-2;
+	animation-name: Linkedin;
 }
 
 .item-3{
-	animation-name: anim-3;
+	animation-name: GitHub;
 }
 
-@keyframes anim-1 {
+@keyframes Gmail {
 	0%, 8.3% { left: -100%; opacity: 0; }
     8.3%, 25% { left: 33.33%; opacity: 1; }
     33.33%, 100% { left: 100%; opacity: 0; }
 }
 
-@keyframes anim-2 {
+@keyframes Linkedin {
     0%, 33.33% { left: -100%; opacity: 0; }
-    41.63%, 58.29% { left: 0%; opacity: 1; }
+    41.63%, 58.29% { left: 0; opacity: 1; }
     66.66%, 100% { left: 110%; opacity: 0; }
 }
 
-@keyframes anim-3 {
+@keyframes GitHub {
     0%, 66.66% { left: -100%; opacity: 0; }
     74.96%, 91.62% { left: -33.33%; opacity: 1; }
     100% { left: 110%; opacity: 0; }
-}
-
-
-.icon {
-    width: 20px;
-}
-
-.contacts {
-    align-self: center;
-    padding: 0;
 }
 
 @media only screen and (max-width: 320px) {
@@ -277,7 +275,7 @@ p {
 
 @media only screen and (min-width: 718px) {
     html {
-        padding-bottom: 450px;
+        padding-bottom: 400px;
     }
 
     section {

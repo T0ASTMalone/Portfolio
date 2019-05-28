@@ -10,7 +10,6 @@ body {
     font-family: 'Muli', sans-serif;
     margin: 0;
     background-color: #2C42BC;
-    color: #feffff;
 }
 
 main {
@@ -25,12 +24,13 @@ section {
     margin: auto;
 }
 
+
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 0px 20px;
+    padding: 0 20px;
     height: 100px;
     background-color: rgb(44, 66, 188, .5);
     box-shadow: 0 0 10px 10px rgb(44, 66, 188, .5); 
@@ -45,10 +45,6 @@ ul {
     width: 75px;
 }
 
-li {
-    list-style: none;
-}
-
 .nested-nav {
     display: flex;
     justify-content: space-between;
@@ -57,9 +53,11 @@ li {
     height: 100px;
 }
 
-.scroll-link {
-    text-align: right;
+/*link stuff*/
+li {
+    list-style: none;
 }
+
 
 a:visited, a:link  {
     color: White;
@@ -78,6 +76,7 @@ a:hover, button:hover, a:focus, button:focus{
     padding: 10px;
 }
 
+/*font-sizes*/
 p, 
 button,
 li {
@@ -91,9 +90,10 @@ button {
     display: inline-block;
     background: none;
 	border: none;
-	padding: 0;
+    padding: 0;
     align-self: center;
 }
+
 
 .title, #name, button {
     color: #94EEDB;
@@ -113,13 +113,12 @@ p {
 
 .info {
     width: 250px;
-    transition: ease all  1s;
 }
 
 .project-title {
+    font-weight: bolder;
     margin: 0;
     font-size: 20px;
-    font-weight: bolder;
 }
 
 .content-container {
@@ -130,9 +129,6 @@ p {
     margin-top: 16px;
 }
 
-#contact-me {
-    overflow: hidden;
-}
 
 #project {
     flex-direction: row;
@@ -141,14 +137,12 @@ p {
 
 .project-info {
     padding-left: 10px;
-    
 }
 
 
 .screen-shots {
     vertical-align: top;
     display: none;
-    transition: ease all  1s;
 }
 
 .screen-shots:hover{
@@ -168,56 +162,43 @@ p {
 .contacts {
     align-self: center;
     padding: 0;
+    align-content: center;
 }
 
-.text-slide {
-    overflow: hidden;
-    display: flex;
-    align-self: center;
-    width: 600px;
-}
-
-.item-1, 
-.item-2, 
-.item-3 {
+.item-1 {
     text-align: center;
-    position: relative;
-    display: inline-block;
-    margin: auto;
-    width: 200px;
-	animation-duration: 15s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
 }
 
-.item-1{
-	animation-name: Gmail;
-}
+@media only screen and (max-width: 455px) and (min-width: 320px) {
+    #name {
+        width: 180px;
+        font-size: 18px;
+    }
 
-.item-2{
-	animation-name: Linkedin;
-}
+    nav {
+        padding: 0 10px;
+        justify-content: space-around;
+        height: 100px;
+    }
 
-.item-3{
-	animation-name: GitHub;
-}
+    .title {
+        font-size: 50px;
+    }
 
-@keyframes Gmail {
-	0%, 8.3% { left: -100%; opacity: 0; }
-    8.3%, 25% { left: 33.33%; opacity: 1; }
-    33.33%, 100% { left: 100%; opacity: 0; }
-}
+    .project-title {
+        font-size: 18px;
+    }
 
-@keyframes Linkedin {
-    0%, 33.33% { left: -100%; opacity: 0; }
-    41.63%, 58.29% { left: 0; opacity: 1; }
-    66.66%, 100% { left: 110%; opacity: 0; }
-}
+    p, 
+    button,
+    li {
+        font-size: 14px;
+        line-height: 21px;
+    }
 
-@keyframes GitHub {
-    0%, 66.66% { left: -100%; opacity: 0; }
-    74.96%, 91.62% { left: -33.33%; opacity: 1; }
-    100% { left: 110%; opacity: 0; }
+    .icon {
+        width: 20px;
+    }
 }
 
 @media only screen and (min-height: 640px){
@@ -237,6 +218,8 @@ p {
     }
 
 }
+
+
 /*add media query that adds margins to the left and right of content-container*/
 
 @media only screen and (min-width: 718px) {
@@ -281,12 +264,6 @@ p {
 
     .text-slide {
         width: 1200px;
-    }
-
-    .item-1,
-    .item-2,
-    .item-3 {
-        width: 400px;
     }
 }
 

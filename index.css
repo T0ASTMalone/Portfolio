@@ -1,29 +1,28 @@
 * {
     box-sizing: border-box;
 }
+
 html {
-    padding-bottom: 700px;
+    padding-bottom: 200px;
 }
+
 body {
     font-family: 'Muli', sans-serif;
     margin: 0;
+    background-color: #2C42BC;
+    color: #feffff;
+}
+
+main {
+    margin-top: 5%;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    padding: 100px 10px 0px 10px;
+    padding: 100px 20px 0 20px;
     min-height: 450px;
     margin: auto;
-}
-
-#about-me,
-#contact {
-    background-color: #aaa;
-}
-
-#projects {
-    background-color: rgb(190, 190, 190);
 }
 
 nav {
@@ -32,14 +31,29 @@ nav {
     left: 0;
     right: 0;
     padding: 0px 20px;
-    background-color: #aaa;
     height: 100px;
+    background-color: rgb(44, 66, 188, .5);
+    box-shadow: 0 0 10px 10px rgb(44, 66, 188, .5); 
+}
+
+ul {
+    padding: 0;
+}
+
+#scrollTo {
+    font-weight: bold;
+    width: 75px;
+}
+
+li {
+    list-style: none;
 }
 
 .nested-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
     height: 100px;
 }
 
@@ -47,22 +61,30 @@ nav {
     text-align: right;
 }
 
-main {
-    margin-top: 12%;
+a:visited, a:link  {
+    color: White;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-li {
-    list-style: none;
+a:hover, button:hover, a:focus, button:focus{
+    color: #E56EA5;
+    transition: ease all  1s;
+    outline-color: #94EEDB;
 }
 
 .contact-link {
     display: inline;
+    padding: 10px;
 }
 
 p, 
 button,
 li {
+    color: white;
     font-size: 16px;
+    font-weight: bolder;
+    line-height: 27px;
 }
 
 button {
@@ -73,9 +95,15 @@ button {
     align-self: center;
 }
 
+.title, #name, button {
+    color: #94EEDB;
+}
+
 .title {
-    font-size: 40px;
-    margin: 10px;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 10px 0;
+    letter-spacing: 7px;
 }
 
 p {
@@ -85,14 +113,16 @@ p {
 
 .info {
     width: 250px;
+    transition: ease all  1s;
 }
 
 .project-title {
     margin: 0;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .content-container {
-    padding: 0px 10px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -100,9 +130,13 @@ p {
     margin-top: 16px;
 }
 
+#contact-me {
+    overflow: hidden;
+}
+
 #project {
     flex-direction: row;
-    
+    margin-top: 26px;
 }
 
 .project-info {
@@ -112,55 +146,106 @@ p {
 
 
 .screen-shots {
-    width: 30%;
-    height: 30%;
+    vertical-align: top;
+    display: none;
+    transition: ease all  1s;
 }
 
-img {
+.screen-shots:hover{
+    box-shadow: 3px 3px #94EEDB;
+}
+
+.show {
+    display: block;
+    width: 125px;
+    height: 200px;
+}
+
+.icon {
     width: 20px;
 }
 
 .contacts {
     align-self: center;
-    justify-self: flex-end;
     padding: 0;
 }
 
+.text-slide {
+    overflow: hidden;
+    display: flex;
+    align-self: center;
+    width: 600px;
+}
 
-/*media query that adds margins to the left and right of content-container*/
+.item-1, 
+.item-2, 
+.item-3 {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 200px;
+	animation-duration: 15s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
 
-@media only screen and (max-width: 320px) {
-    #name {
-        width: 180px;
+.item-1{
+	animation-name: Gmail;
+}
+
+.item-2{
+	animation-name: Linkedin;
+}
+
+.item-3{
+	animation-name: GitHub;
+}
+
+@keyframes Gmail {
+	0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%, 25% { left: 33.33%; opacity: 1; }
+    33.33%, 100% { left: 100%; opacity: 0; }
+}
+
+@keyframes Linkedin {
+    0%, 33.33% { left: -100%; opacity: 0; }
+    41.63%, 58.29% { left: 0; opacity: 1; }
+    66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes GitHub {
+    0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: -33.33%; opacity: 1; }
+    100% { left: 110%; opacity: 0; }
+}
+
+@media only screen and (min-height: 640px){
+    #about-me, #projects {
+        padding-bottom: 160px;
     }
 
-    nav {
-        padding: 0 10px;
-        justify-content: space-around;
-        height: 100px;
-    }
-
-    .project-title {
-        font-size: 18px;
-    }
-
-    .icon {
-        width: 20px;
+    #project {
+        height: 380px;
     }
 }
 
+
+@media only screen and (min-height: 810px){
+    #about-me, #projects {
+        padding-bottom: 247px;
+    }
+
+}
 /*add media query that adds margins to the left and right of content-container*/
 
 @media only screen and (min-width: 718px) {
     html {
-        padding-bottom: 700px;
+        padding-bottom: 400px;
     }
 
-    .nested-nav {
-        margin: auto;
-    }
-
-    section, .nested-nav {
+    section {
+        padding: 100px 0 0 0;
         width: 80vw;
     }
 
@@ -170,11 +255,43 @@ img {
     }
 
     #scrollTo {
+        font-weight: bold;
         width: 90px;
+    }
+
+    .screen-shots {
+        width: 250px;
+        height: 370px;
+    }
+
+    #project-info {
+        margin-bottom: 10px;
     }
 
     .icon {
         width: 40px;
     }
 
+    p, 
+    button,
+    li,
+    #name {
+        font-size: 20px;
+    }
+
+    .text-slide {
+        width: 1200px;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3 {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nested-nav {
+        width: 80vw;
+    }
 }

@@ -27,7 +27,7 @@ section {
 }
 
 
-nav {
+#nav-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ ul {
     width: 75px;
 }
 
-.nested-nav {
+.nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +63,6 @@ li {
 
 a:visited, a:link  {
     color: White;
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -84,8 +83,8 @@ button,
 li {
     color: white;
     font-size: 16px;
-    font-weight: bolder;
-    line-height: 27px;
+    font-weight: bold;
+    line-height: 24px;
 }
 
 button {
@@ -205,21 +204,21 @@ p {
 }
 
 @keyframes Gmail {
-	0%, 8.3% { left: -100%; opacity: 0; }
+	0%, 8.3% { left: -33.33%; opacity: 0; }
     8.3%, 25% { left: 33.33%; opacity: 1; }
     33.33%, 100% { left: 100%; opacity: 0; }
 }
 
 @keyframes Linkedin {
-    0%, 33.33% { left: -100%; opacity: 0; }
+    0%, 33.33% { left: -66.66%; opacity: 0; }
     41.63%, 58.29% { left: 0; opacity: 1; }
-    66.66%, 100% { left: 110%; opacity: 0; }
+    66.66%, 100% { left: 66.66%; opacity: 0; }
 }
 
 @keyframes GitHub {
     0%, 66.66% { left: -100%; opacity: 0; }
     74.96%, 91.62% { left: -33.33%; opacity: 1; }
-    100% { left: 110%; opacity: 0; }
+    100% { left: 33.33%; opacity: 0; }
 }
 
 @media only screen and (max-width: 320px) {
@@ -228,7 +227,7 @@ p {
         font-size: 18px;
     }
 
-    nav {
+    #nav-bar {
         padding: 0 10px;
         justify-content: space-around;
         height: 100px;
@@ -249,9 +248,6 @@ p {
         line-height: 21px;
     }
 
-    .icon {
-        width: 20px;
-    }
 }
 
 @media only screen and (min-height: 640px){
@@ -271,7 +267,6 @@ p {
     }
 
 }
-/*add media query that adds margins to the left and right of content-container*/
 
 @media only screen and (min-width: 718px) {
     html {
@@ -298,6 +293,10 @@ p {
         height: 370px;
     }
 
+    .project-title {
+        font-size: 24px;
+    }
+
     #project-info {
         margin-bottom: 10px;
     }
@@ -311,6 +310,7 @@ p {
     li,
     #name {
         font-size: 20px;
+        line-height: 25px;
     }
 
     .text-slide {
@@ -325,7 +325,9 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
-    .nested-nav {
+    .nav-content {
         width: 80vw;
     }
+
+
 }

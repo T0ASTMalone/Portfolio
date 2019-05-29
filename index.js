@@ -3,7 +3,7 @@
 function scrollTo() {
     $('.scrollLink').on('click', function(){
         let aid = $(this).attr('href');
-        $('html, body').animate({scrollTop: $(aid).offset().top}, 2000);
+        $('html, body').animate({scrollTop: $(aid).offset().top}, 1500);
     });
 }
 

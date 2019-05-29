@@ -10,6 +10,10 @@ body {
     font-family: 'Muli', sans-serif;
     margin: 0;
     background-color: #2C42BC;
+<<<<<<< HEAD
+=======
+    color: #feffff;
+>>>>>>> feature-branch
 }
 
 main {
@@ -22,10 +26,18 @@ section {
     padding: 100px 20px 0 20px;
     min-height: 450px;
     margin: auto;
+<<<<<<< HEAD
 }
 
 
 nav {
+=======
+    overflow: hidden;
+}
+
+
+#nav-bar {
+>>>>>>> feature-branch
     position: fixed;
     top: 0;
     left: 0;
@@ -45,12 +57,20 @@ ul {
     width: 75px;
 }
 
-.nested-nav {
+.nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
     height: 100px;
+<<<<<<< HEAD
+=======
+}
+
+/*link stuff*/
+li {
+    list-style: none;
+>>>>>>> feature-branch
 }
 
 /*link stuff*/
@@ -58,10 +78,15 @@ li {
     list-style: none;
 }
 
+<<<<<<< HEAD
 
 a:visited, a:link  {
     color: White;
     font-weight: bold;
+=======
+a:visited, a:link  {
+    color: White;
+>>>>>>> feature-branch
     text-decoration: none;
 }
 
@@ -82,8 +107,13 @@ button,
 li {
     color: white;
     font-size: 16px;
+<<<<<<< HEAD
     font-weight: bolder;
     line-height: 27px;
+=======
+    font-weight: bold;
+    line-height: 24px;
+>>>>>>> feature-branch
 }
 
 button {
@@ -113,6 +143,7 @@ p {
 
 .info {
     width: 250px;
+    transition: ease all  1s;
 }
 
 .project-title {
@@ -121,6 +152,15 @@ p {
     font-size: 20px;
 }
 
+<<<<<<< HEAD
+.project-title {
+    font-weight: bolder;
+    margin: 0;
+    font-size: 20px;
+}
+
+=======
+>>>>>>> feature-branch
 .content-container {
     display: flex;
     flex-direction: column;
@@ -129,6 +169,12 @@ p {
     margin-top: 16px;
 }
 
+<<<<<<< HEAD
+=======
+#contact-me {
+    overflow:hidden;
+}
+>>>>>>> feature-branch
 
 #project {
     flex-direction: row;
@@ -143,6 +189,7 @@ p {
 .screen-shots {
     vertical-align: top;
     display: none;
+<<<<<<< HEAD
 }
 
 .screen-shots:hover{
@@ -155,6 +202,21 @@ p {
     height: 200px;
 }
 
+=======
+    transition: ease all  1s;
+}
+
+.screen-shots:hover{
+    box-shadow: 3px 3px #94EEDB;
+}
+
+.show {
+    display: block;
+    width: 125px;
+    height: 200px;
+}
+
+>>>>>>> feature-branch
 .icon {
     width: 20px;
 }
@@ -165,6 +227,7 @@ p {
     align-content: center;
 }
 
+<<<<<<< HEAD
 .item-1 {
     text-align: center;
 }
@@ -221,6 +284,105 @@ p {
 
 
 /*add media query that adds margins to the left and right of content-container*/
+=======
+
+.text-slide {
+    overflow: hidden;
+    display: flex;
+    align-self: center;
+    width: 600px;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 200px;
+	animation-duration: 15s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: Gmail;
+}
+
+.item-2{
+	animation-name: Linkedin;
+}
+
+.item-3{
+	animation-name: GitHub;
+}
+
+@keyframes Gmail {
+	0%, 8.3% { left: -33.33%; opacity: 0; }
+    8.3%, 25% { left: 33.33%; opacity: 1; }
+    33.33%, 100% { left: 100%; opacity: 0; }
+}
+
+@keyframes Linkedin {
+    0%, 33.33% { left: -66.66%; opacity: 0; }
+    41.63%, 58.29% { left: 0; opacity: 1; }
+    66.66%, 100% { left: 66.66%; opacity: 0; }
+}
+
+@keyframes GitHub {
+    0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: -33.33%; opacity: 1; }
+    100% { left: 33.33%; opacity: 0; }
+}
+
+@media only screen and (max-width: 320px) {
+    #name {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    #nav-bar {
+        padding: 0 10px;
+        justify-content: space-around;
+        height: 100px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    p, 
+    button,
+    li {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+}
+
+@media only screen and (min-height: 640px){
+    #about-me, #projects {
+        padding-bottom: 160px;
+    }
+
+    #project {
+        height: 380px;
+    }
+}
+
+
+@media only screen and (min-height: 810px){
+    #about-me, #projects {
+        padding-bottom: 247px;
+    }
+
+}
+>>>>>>> feature-branch
 
 @media only screen and (min-width: 718px) {
     html {
@@ -247,6 +409,13 @@ p {
         height: 370px;
     }
 
+<<<<<<< HEAD
+=======
+    .project-title {
+        font-size: 24px;
+    }
+
+>>>>>>> feature-branch
     #project-info {
         margin-bottom: 10px;
     }
@@ -260,11 +429,16 @@ p {
     li,
     #name {
         font-size: 20px;
+<<<<<<< HEAD
+=======
+        line-height: 25px;
+>>>>>>> feature-branch
     }
 
     .text-slide {
         width: 1200px;
     }
+<<<<<<< HEAD
 }
 
 @media only screen and (min-width: 1024px) {
@@ -272,3 +446,20 @@ p {
         width: 80vw;
     }
 }
+=======
+
+    .item-1,
+    .item-2,
+    .item-3 {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav-content {
+        width: 80vw;
+    }
+
+
+}
+>>>>>>> feature-branch

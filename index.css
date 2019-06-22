@@ -34,8 +34,7 @@ section {
     right: 0;
     padding: 0 20px;
     height: 100px;
-    background-color: rgb(44, 66, 188, .5);
-    box-shadow: 0 0 10px 10px rgb(44, 66, 188, .5); 
+    background-color: rgb(44, 66, 188);
 }
 
 ul {
@@ -74,6 +73,10 @@ a:hover, button:hover, a:focus, button:focus{
     color: #E56EA5;
     transition: ease all  1s;
     outline-color: #94EEDB;
+}
+
+.git-link {
+    text-decoration-line: underline;
 }
 
 .contact-link {
@@ -131,7 +134,7 @@ p {
     display: flex;
     flex-direction: column;
     align-self: center;
-    max-width: 700px;
+    max-width: 800px;
     margin-top: 16px;
 }
 
@@ -139,20 +142,28 @@ p {
     overflow:hidden;
 }
 
-#project {
-    flex-direction: row;
+.project {
+    flex-direction: column;
     margin-top: 26px;
+    margin-bottom: 20px;
 }
 
 .project-info {
     padding-left: 10px;
 }
 
+#beer-info,
+#quiz-info {
+    padding-left: 0;
+    padding-right: 10px;
+}
 
 .screen-shots {
     vertical-align: top;
     display: none;
     transition: ease all  1s;
+    align-self: center;
+    margin-top: 20px;
 }
 
 .screen-shots:hover{
@@ -161,8 +172,8 @@ p {
 
 .show {
     display: block;
-    width: 125px;
-    height: 200px;
+    width: 225px;
+    height: 450px;
 }
 
 .icon {
@@ -260,8 +271,8 @@ p {
         padding-bottom: 160px;
     }
 
-    #project {
-        height: 380px;
+    .project {
+        min-height: 380px;
     }
 }
 
@@ -271,6 +282,24 @@ p {
         padding-bottom: 247px;
     }
 
+}
+
+@media only screen and (min-width: 500px) {
+    #quiz-app {
+        flex-direction: row-reverse;
+    }
+
+    #beer-app {
+        flex-direction: row;
+    } 
+
+    #quiz-info {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+    .screen-shots {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (min-width: 718px) {
@@ -285,7 +314,7 @@ p {
 
     .show {
         width: 200px;
-        height: 320px;
+        height: 400px;
     }
 
     #scrollTo {
@@ -295,7 +324,7 @@ p {
 
     .screen-shots {
         width: 250px;
-        height: 370px;
+        height: 500px;
     }
 
     .project-title {
@@ -334,5 +363,8 @@ p {
         width: 80vw;
     }
 
-
+    .screen-shots {
+        width: 300px;
+        height: 600px;
+    }
 }

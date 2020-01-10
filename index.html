@@ -1,105 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Miguel Ponce | Full Stack Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav id="nav-bar">
-        <div class="nav-content">
-            <h1 id="name">Miguel Angel Ponce</h1>
-            <ul id="scrollTo">
-                <li><a class="scrollLink" href="#about-me">About Me</a></li>
-                <li><a class="scrollLink" href="#projects">Projects</a></li>
-                <li><a class="scrollLink" href="#contact">Contact</a></li>
-            </ul>
-        </div> 
+      <div class="nav-content">
+        <h1 id="name">MIGUEL PONCE</h1>
+        <ul id="scrollTo">
+          <li><a class="scrollLink" href="#about-me">About</a></li>
+          <li><a class="scrollLink" href="#skills">Skills</a></li>
+          <li><a class="scrollLink" href="#projects">Projects</a></li>
+          <li><a class="scrollLink" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-
+    <div class="hero">
+      <h2 class="slogan">
+        Inspire. Innovate.
+        <a class="scrollLink slogan-button" href="#about-me">Explore.</a>
+      </h2>
+    </div>
     <main>
-        <section id="about-me">
-            <h2 class="title">About Me</h2> 
-            <div class="content-container" id="my-info">
-                <p>My name is Miguel Angel Ponce. I am a Full Stack Web Developer based in Denver, Colorado. I love learning new technologies, crave productivity, and enjoy solving problems with HTML, CSS, JavaScript, & jQuery.</p>
-                <button class="button active" id="learn-more">Learn More</button>
-            </div>
-        </section>
-                
-        <section id="projects">
-            <h2 class="title">Projects</h2>
-            <div class="content-container project" id="quiz-app">
-                <div class="project-info" id="quiz-info">
-                    <a href="https://t0astmalone.github.io/Music-Production-Quiz/"><span class="project-title">Music Production Quiz</span></a>   
-                    <p>Music Production Quiz is an app meant to test the users knowledge of basic music production tools.</p>
-                    <p>Checkout the live app 
-                        <a href="https://t0astmalone.github.io/Music-Production-Quiz/"><span class="git-link">here</span></a>, 
-                        or visit my repo  
-                        <a href="https://github.com/T0ASTMalone/Music-Production-Quiz"><span class="git-link">here</span></a>. If you would like to see
-                        more screenshots click or tap on the project image.
-                    </p>
-                    <img class="icon" src="Technologies/html5.png" alt="html-icon">
-                    <img class="icon" src="Technologies/css-3.png" alt="css-icon">
-                    <img class="icon" src="Technologies/javascript.png" alt="js-icon">
-                    <a href="https://github.com/T0ASTMalone/Music-Production-Quiz"><img class="icon link" src="icons/GitHub.png" alt="github-icon"></a> 
-                </div>
-                <img class="quiz screen-shots show"  src="Project-screenshots/Quiz-app/Start-screen.PNG" alt="start-screen-screenshot"> 
-                <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Quiz-screen.PNG" alt="Quiz-screen-screenshot"> 
-                <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Feedback-screen.PNG" alt="Feedback-screen-screenshot"> 
-                <img class="quiz screen-shots" src="Project-screenshots/Quiz-app/Final-score-screen.PNG" alt="Final-score-screen-screenshot">  
-            </div>
-            <div class="content-container project" id="beer-app">
-                <div class="project-info" id="beer-info">
-                    <a href="https://t0astmalone.github.io/Una-Cerveza-Por-Favor/"><span class="project-title">Una Cerveza, Por Favor!</span></a>   
-                    <p>Search for beers or choose the "get a random beer" option and get information about the selected beer, 
-                        or enter a city and get information about breweries in that city.</p>
-                    <p>Checkout the live app 
-                        <a href="https://t0astmalone.github.io/Una-Cerveza-Por-Favor"><span class="git-link">here</span></a>, 
-                        or visit my repo 
-                        <a href="https://github.com/T0ASTMalone/Una-Cerveza-Por-Favor"><span class="git-link">here</span></a>. If you would like to see
-                        more screenshots click or tap on the project image.
-                    </p>
-                    <img class="icon" src="Technologies/html5.png" alt="html-icon">
-                    <img class="icon" src="Technologies/css-3.png" alt="css-icon">
-                    <img class="icon" src="Technologies/javascript.png" alt="js-icon">
-                    <a href="https://github.com/T0ASTMalone/Una-Cerveza-Por-Favor"><img class="icon link" src="icons/GitHub.png" alt="github-icon"></a> 
-                </div>
-                <img class="beer screen-shots show"  src="Project-screenshots/Una-cerveza-por-favor/Landing page.PNG" alt="Landing Page"> 
-                <img class="beer screen-shots" src="Project-screenshots/Una-cerveza-por-favor/On-scroll.PNG" alt="Landing on scroll"> 
-                <img class="beer screen-shots" src="Project-screenshots/Una-cerveza-por-favor/beer-or-brewery.PNG" alt="Beer or brewery"> 
-                <img class="beer screen-shots" src="Project-screenshots/Una-cerveza-por-favor/Get-brewries-list.PNG" alt="Get brewery">  
-                <img class="beer screen-shots" src="Project-screenshots/Una-cerveza-por-favor/Get-brewries-list.PNG" alt="Get beer">  
-                <img class="beer screen-shots" src="Project-screenshots/Una-cerveza-por-favor/List.PNG" alt="List">  
-                <img class="beer screen-shots" src="Project-screenshots/Una-cerveza-por-favor/Brewery.PNG" alt="brewery">  
-                <img class="beer screen-shots" src="Project-screenshots/Una-cerveza-por-favor/Beer.PNG" alt="beer">  
-            </div>
-        </section>
-            
-        <section id="contact">
-            <h2 class="title">Contact</h2>
-            <div class="content-container" id="contact-me">
-                <div class="text-slide">
-                    <p class="item-1">Wanna Chat?</p>
-                    <p class="item-2">Wanna Work Together?</p>  
-                    <p class="item-3">Wanna See My Work?</p>
-                </div>
-                <ul class="contacts">
-                    <li class="contact-link"><a href="mailto:miguelaponce258@gmail.com"><img class="icon" src="icons/gmail.png" alt="gmail-icon"></a></li>
-                    <li class="contact-link"><a href="https://www.linkedin.com/in/miguel-ponce-b5160111a/ "><img class="icon" src="icons/linkedin.png" alt="linkedin-icon"></a></li>
-                    <li class="contact-link"><a href="https://github.com/T0ASTMalone "><img class="icon" src="icons/GitHub.png" alt="github-icon"></a></li>
-                </ul>  
-            </div>
-        </section>
+      <section id="about-me" class="content-section">
+        <h2 class="title">About Me</h2>
+        <div class="about-me-container">
+          <div class="content-container" id="my-info">
+            <img class="profile" src="./img/its-mee.jpg" alt="me" />
+            <p>
+              My name is Miguel Angel Ponce. I have always enjoyed figuring out
+              how things work, and using that knowledge to create something new.
+              Technology is such a big part of my life. I use software and the
+              internet everyday, to make music, to make art, to help me stay
+              fit, and for so many other things. I wanted to learn how the
+              technology I use everyday works, so I became a Full Stack
+              Developer.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section id="skills" class="content-section">
+        <h2 class="title">Skills</h2>
+        <div class="skills-container">
+          <img src="img/Technologies/nodejs.svg" alt="nodejs" class="skill" />
+          <img src="img/Technologies/express.svg" alt="nodejs" class="skill" />
+          <img
+            src="img/Technologies/mocha-plain.svg"
+            alt="nodejs"
+            class="skill"
+          />
+          <img src="img/Technologies/react.svg" alt="nodejs" class="skill" />
+          <img
+            src="img/Technologies/postgresql.svg"
+            alt="nodejs"
+            class="skill"
+          />
+          <img
+            src="img/Technologies/heroku-plain.svg"
+            alt="nodejs"
+            class="skill"
+          />
+          <img
+            src="img/Technologies/jquery-plain.svg"
+            alt="nodejs"
+            class="skill"
+          />
+          <img
+            src="img/Technologies/javascript.svg"
+            alt="nodejs"
+            class="skill"
+          />
+          <img src="img/Technologies/html5.svg" alt="nodejs" class="skill" />
+          <img src="img/Technologies/css3.svg" alt="nodejs" class="skill" />
+          <img
+            src="img/Technologies/npm-original-wordmark.svg"
+            alt="nodejs"
+            class="skill"
+          />
+          <img
+            src="img/Technologies/trello-plain.svg"
+            alt="nodejs"
+            class="skill"
+          />
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <h2 class="title">Projects</h2>
+
+        <div class="projects-container">
+          <div class="content-container project" id="quiz-app">
+            <div class="screen-shot-container">
+              <img
+                class="quiz screen-shots show"
+                src="Project-screenshots/Quiz-app/quiz.png"
+                alt="start-screen-screenshot"
+              />
+            </div>
+
+            <div class="project-info" id="quiz-info">
+              <h2 class="project-title">Music Production Quiz</h2>
+              <p>
+                Music Production Quiz is an app meant to test the users
+                knowledge of basic music production tools.
+              </p>
+
+              <img
+                class="icon"
+                src="img/Technologies/html5.svg"
+                alt="html-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/css3.svg"
+                alt="css-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/javascript.svg"
+                alt="js-icon"
+              />
+              <div class="button-container">
+                <a
+                  href="https://github.com/T0ASTMalone/Music-Production-Quiz"
+                  class="button"
+                >
+                  Code
+                </a>
+                <a
+                  href="https://t0astmalone.github.io/Music-Production-Quiz/"
+                  class="button"
+                >
+                  Live App
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-container project" id="beer-app">
+            <div class="screen-shot-container">
+              <img
+                class="screen-shots show"
+                src="Project-screenshots/Una-cerveza-por-favor/brewery.png"
+                alt="Landing Page"
+              />
+            </div>
+
+            <div class="project-info" id="beer-info">
+              <h2 class="project-title">Una Cerveza, Por Favor!</h2>
+              <p>
+                Search for beers or choose the "get a random beer" option and
+                get information about the selected beer, or enter a city and get
+                information about breweries in that city.
+              </p>
+
+              <img
+                class="icon"
+                src="img/Technologies/html5.svg"
+                alt="html-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/css3.svg"
+                alt="css-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/javascript.svg"
+                alt="js-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/jquery-plain.svg"
+                alt="jquery"
+              />
+
+              <div class="button-container">
+                <a
+                  href="https://github.com/T0ASTMalone/Una-Cerveza-Por-Favor"
+                  class="button"
+                >
+                  Code
+                </a>
+                <a
+                  href="https://t0astmalone.github.io/Una-Cerveza-Por-Favor"
+                  class="button"
+                >
+                  Live App
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-container project" id="macrofy-app">
+            <div class="screen-shot-container">
+              <img
+                class="screen-shots show"
+                src="Project-screenshots/Macrofy/macrofy.png"
+                alt="Landing Page"
+              />
+            </div>
+
+            <div class="project-info" id="macrofy-info">
+              <h2 class="project-title">Macrofy</h2>
+              <p>
+                MacroFy allows you to track your macro nutrients by providing
+                tools to creating meals and add them to your day
+              </p>
+
+              <img
+                class="icon"
+                src="img/Technologies/nodejs.svg"
+                alt="html-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/react.svg"
+                alt="css-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/express.svg"
+                alt="js-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/postgresql.svg"
+                alt="jquery"
+              />
+              <div class="button-container">
+                <a
+                  href="https://github.com/T0ASTMalone/macros-tracker-capstone-react"
+                  class="button"
+                >
+                  Code
+                </a>
+                <a href="https://miguels-macro-tracker.now.sh/" class="button">
+                  Live App
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-container project" id="workplace-app">
+            <div class="screen-shot-container">
+              <img
+                class="screen-shots show"
+                src="Project-screenshots/WorkPlace/landing-page.png"
+                alt="Landing Page"
+              />
+            </div>
+
+            <div class="project-info" id="wp-info">
+              <h2 class="project-title">WorkPlace</h2>
+
+              <p>
+                WorkPlace is where team members can communicate and share ideas
+                with one another in order to keep everyone in the loop and up to
+                date with the day to day events of their workplace.
+              </p>
+              <img
+                class="icon"
+                src="img/Technologies/nodejs.svg"
+                alt="html-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/react.svg"
+                alt="css-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/express.svg"
+                alt="js-icon"
+              />
+              <img
+                class="icon"
+                src="img/Technologies/postgresql.svg"
+                alt="jquery"
+              />
+              <div class="button-container">
+                <a
+                  href="https://github.com/T0ASTMalone/workplace-communication-app-capstone-react"
+                  class="button"
+                >
+                  Code
+                </a>
+                <a
+                  href="https://workplace-communication-app.now.sh/"
+                  class="button"
+                >
+                  Live App
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="title">Contact</h2>
+        <div class="content-container" id="contact-me">
+          <div class="text-slide">
+            <p class="item-1">Wanna Chat?</p>
+            <p class="item-2">Wanna Work Together?</p>
+            <p class="item-3">Wanna See My Work?</p>
+          </div>
+          <ul class="contacts">
+            <li class="contact-link">
+              <a href="mailto:miguelaponce258@gmail.com"
+                ><img
+                  class="icon contact-icon"
+                  src="img/Technologies/gmail.svg"
+                  alt="gmail-icon"
+              /></a>
+            </li>
+            <li class="contact-link">
+              <a href="https://www.linkedin.com/in/miguel-ponce-b5160111a/ "
+                ><img
+                  class="icon contact-icon"
+                  src="img/Technologies/linkedin-original.svg"
+                  alt="linkedin-icon"
+              /></a>
+            </li>
+            <li class="contact-link">
+              <a href="https://github.com/T0ASTMalone "
+                ><img
+                  class="icon contact-icon"
+                  src="img/Technologies/github.svg"
+                  alt="github-icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <script 
-        src="https://code.jquery.com/jquery-3.4.1.js" 
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
-        crossorigin="anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

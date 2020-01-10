@@ -1,370 +1,568 @@
 * {
-    box-sizing: border-box;
-}
-
-html {
-    padding-bottom: 200px;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Muli', sans-serif;
-    margin: 0;
-    background-color: #2C42BC;
-    color: #feffff;
-}
+  font-family: "Muli", sans-serif;
+  margin: 0;
 
-main {
-    margin-top: 5%;
+  /* color: #feffff; */
+  background-color: #ffffff;
+  color: #030620;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 20px 0 20px;
-    min-height: 450px;
-    margin: auto;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 10px 0 10px;
+  min-height: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1400px;
 }
 
+.content-section {
+  min-height: 600px;
+}
 
 #nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 20px;
-    height: 100px;
-    background-color: rgb(44, 66, 188);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 10px;
+  height: 50px;
+  background-color: #090d19;
+  z-index: 9999999999;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 #scrollTo {
-    font-weight: bold;
-    width: 75px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+#scrollTo li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0 0 5px;
 }
 
 .nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 100%;
 }
 
 /*link stuff*/
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /*link stuff*/
 li {
-    list-style: none;
+  list-style: none;
 }
 
-a:visited, a:link  {
-    color: White;
-    text-decoration: none;
+.scrollLink {
+  font-size: 14px;
 }
 
-a:hover, button:hover, a:focus, button:focus{
-    color: #E56EA5;
-    transition: ease all  1s;
-    outline-color: #94EEDB;
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: white;
+  transition: ease-in-out 1s;
+  outline-color: #94eedb;
 }
 
 .git-link {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .contact-link {
-    display: inline;
-    padding: 10px;
+  display: inline;
+  padding: 10px;
 }
 
 /*font-sizes*/
-p, 
-button,
+p,
+.button,
 li {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
+  /* color: white; */
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
 }
 
-button {
-    display: inline-block;
-    background: none;
-	border: none;
-    padding: 0;
-    align-self: center;
+.button-container {
+  margin-top: 16px;
 }
 
+.button {
+  display: inline-block;
+  padding: 10px;
+  align-self: center;
+  background-color: #ffdd7f;
+  border: none;
+  height: 45px;
+  width: 120px;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+  transition: 0.5s ease-in-out;
+  font-size: 16px;
+  font-family: "Muli", sans-serif;
+  text-align: center;
+}
 
-.title, #name, button {
-    color: #94EEDB;
+.button:hover,
+.button:focus {
+  transition: 0.5s ease-in-out;
+  background-color: #feca3c;
+  box-shadow: 0 4.5px 10px 0 rgba(57, 59, 68, 0.322);
+}
+
+a .button {
+  width: 100px;
 }
 
 .title {
-    font-size: 80px;
-    font-weight: bold;
-    margin: 10px 0;
-    letter-spacing: 7px;
+  /* color: #94eedb; */
+  color: black;
+}
+
+#name {
+  /* font-family: "Rock Salt", cursive; */
+  color: #feca3c;
+  font-family: "Gochi Hand", cursive;
+  font-size: 14px;
+  margin: 0;
+}
+
+.scrollLink,
+#scrollTo {
+  margin: 0;
+}
+
+.scrollLink,
+.slogan,
+.title {
+  color: #6c877e;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 16px 0;
+  letter-spacing: 7px;
+}
+
+/* hero styles */
+
+.hero {
+  display: flex;
+  padding: 10px;
+  background: rgb(0, 0, 0, 0)
+    url("../Wireframe/Project-screenshots/hero/moon-landing-small.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 50px);
+  top: 0;
+  margin-top: 50px;
+}
+
+.slogan {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 50px;
+  align-self: flex-start;
+  width: 150px;
+}
+
+.slogan-button {
+  font-size: 30px;
+}
+
+.slogan-button:visited {
+  color: #6c877e;
+}
+
+.slogan-button:hover {
+  border: 1px solid #feca3c;
+  color: #feca3c;
+  border-radius: 5px;
+}
+
+/* about me styles */
+
+.profile {
+  align-self: flex-start;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.about-me-container {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+#about-me {
+  padding-top: 60px;
+}
+/* Skills styles */
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  width: 60px;
+  margin: 20px;
 }
 
 p {
-    width: auto;
-    align-self: center;
+  width: auto;
+  align-self: center;
 }
 
 .info {
-    width: 250px;
-    transition: ease all  1s;
-}
-
-.project-title {
-    font-weight: bolder;
-    margin: 0;
-    font-size: 20px;
-}
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    max-width: 800px;
-    margin-top: 16px;
-}
-
-#contact-me {
-    overflow:hidden;
-}
-
-.project {
-    flex-direction: column;
-    margin-top: 26px;
-    margin-bottom: 20px;
+  width: 250px;
+  transition: ease all 1s;
 }
 
 .project-info {
-    padding-left: 10px;
+  max-width: 600px;
+  margin: auto;
 }
 
-#beer-info,
-#quiz-info {
-    padding-left: 0;
-    padding-right: 10px;
+#quiz-app {
+  margin-top: 20px;
+}
+.project-title {
+  font-weight: bolder;
+  margin: 0;
+  font-size: 20px;
+  color: #6c877e;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact-me {
+  overflow: hidden;
+}
+
+.project {
+  flex-direction: column;
+  margin: 0 auto 70px auto;
+}
+
+.project,
+.project-info,
+.screen-shots {
+  flex-grow: 2;
+}
+
+.screen-shot-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  max-width: 600px;
+  max-height: 500px;
+  align-self: center;
 }
 
 .screen-shots {
-    vertical-align: top;
-    display: none;
-    transition: ease all  1s;
-    align-self: center;
-    margin-top: 20px;
+  vertical-align: top;
+  align-self: center;
+  width: 100%;
+  transition: 1s ease-in-out;
 }
 
-.screen-shots:hover{
-    box-shadow: 3px 3px #94EEDB;
+.screen-shot-container:hover {
+  box-shadow: 0 4.5px 10px 0 rgba(57, 59, 68, 0.322);
 }
 
-.show {
-    display: block;
-    width: 225px;
-    height: 450px;
+.screen-shots:hover {
+  transform: scale(1.1);
 }
 
 .icon {
-    width: 20px;
+  width: 35px;
 }
 
 .contacts {
-    align-self: center;
-    padding: 0;
-    align-content: center;
+  align-self: center;
+  padding: 0;
+  align-content: center;
 }
-
 
 .text-slide {
-    overflow: hidden;
-    display: flex;
-    align-self: center;
-    width: 600px;
+  overflow: hidden;
+  display: flex;
+  align-self: center;
+  width: 600px;
 }
 
-.item-1, 
-.item-2, 
+.item-1,
+.item-2,
 .item-3 {
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    margin: auto;
-    width: 200px;
-	animation-duration: 15s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 200px;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-.item-1{
-	animation-name: Gmail;
+.item-1 {
+  animation-name: Gmail;
 }
 
-.item-2{
-	animation-name: Linkedin;
+.item-2 {
+  animation-name: Linkedin;
 }
 
-.item-3{
-	animation-name: GitHub;
+.item-3 {
+  animation-name: GitHub;
+}
+
+#contact-me {
+  margin: 16px 0 0 0;
 }
 
 @keyframes Gmail {
-	0%, 8.3% { left: -33.33%; opacity: 0; }
-    8.3%, 25% { left: 33.33%; opacity: 1; }
-    33.33%, 100% { left: 100%; opacity: 0; }
+  0%,
+  8.3% {
+    left: -33.33%;
+    opacity: 0;
+  }
+  8.3%,
+  25% {
+    left: 33.33%;
+    opacity: 1;
+  }
+  33.33%,
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
 }
 
 @keyframes Linkedin {
-    0%, 33.33% { left: -66.66%; opacity: 0; }
-    41.63%, 58.29% { left: 0; opacity: 1; }
-    66.66%, 100% { left: 66.66%; opacity: 0; }
+  0%,
+  33.33% {
+    left: -66.66%;
+    opacity: 0;
+  }
+  41.63%,
+  58.29% {
+    left: 0;
+    opacity: 1;
+  }
+  66.66%,
+  100% {
+    left: 66.66%;
+    opacity: 0;
+  }
 }
 
 @keyframes GitHub {
-    0%, 66.66% { left: -100%; opacity: 0; }
-    74.96%, 91.62% { left: -33.33%; opacity: 1; }
-    100% { left: 33.33%; opacity: 0; }
+  0%,
+  66.66% {
+    left: -100%;
+    opacity: 0;
+  }
+  74.96%,
+  91.62% {
+    left: -33.33%;
+    opacity: 1;
+  }
+  100% {
+    left: 33.33%;
+    opacity: 0;
+  }
 }
 
-@media only screen and (max-width: 320px) {
-    #name {
-        width: 180px;
-        font-size: 18px;
-    }
-
-    #nav-bar {
-        padding: 0 10px;
-        justify-content: space-around;
-        height: 100px;
-    }
-
-    .title {
-        font-size: 50px;
-    }
-
-    .project-title {
-        font-size: 18px;
-    }
-
-    p, 
-    button,
-    li {
-        font-size: 14px;
-        line-height: 21px;
-    }
-
-}
-
-@media only screen and (min-height: 640px){
-    #about-me, #projects {
-        padding-bottom: 160px;
-    }
-
-    .project {
-        min-height: 380px;
-    }
-}
-
-
-@media only screen and (min-height: 810px){
-    #about-me, #projects {
-        padding-bottom: 247px;
-    }
-
-}
-
-@media only screen and (min-width: 500px) {
-    #quiz-app {
-        flex-direction: row-reverse;
-    }
-
-    #beer-app {
-        flex-direction: row;
-    } 
-
-    #quiz-info {
-        padding-right: 0;
-        padding-left: 10px;
-    }
-    .screen-shots {
-        margin-top: 0;
-    }
+@media only screen and (min-height: 700px) and (min-width: 1200px) {
+  .hero {
+    background: url("../Wireframe/Project-screenshots/hero/moon-landing.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 50px);
+    top: 0;
+  }
 }
 
 @media only screen and (min-width: 718px) {
-    html {
-        padding-bottom: 400px;
-    }
+  .skill {
+    width: 80px;
+  }
+  .project-title {
+    font-size: 24px;
+  }
 
-    section {
-        padding: 100px 0 0 0;
-        width: 80vw;
-    }
+  #project-info {
+    margin-bottom: 10px;
+  }
 
-    .show {
-        width: 200px;
-        height: 400px;
-    }
+  .icon {
+    width: 40px;
+  }
 
-    #scrollTo {
-        font-weight: bold;
-        width: 90px;
-    }
+  #name {
+    font-size: 30px;
+  }
 
-    .screen-shots {
-        width: 250px;
-        height: 500px;
-    }
+  p,
+  .button,
+  li,
+  .scrollLink {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-    .project-title {
-        font-size: 24px;
-    }
+  .text-slide {
+    width: 1200px;
+  }
 
-    #project-info {
-        margin-bottom: 10px;
-    }
+  .item-1,
+  .item-2,
+  .item-3 {
+    width: 400px;
+  }
 
-    .icon {
-        width: 40px;
-    }
-
-    p, 
-    button,
-    li,
-    #name {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .text-slide {
-        width: 1200px;
-    }
-
-    .item-1,
-    .item-2,
-    .item-3 {
-        width: 400px;
-    }
+  .slogan,
+  .slogan-button {
+    font-size: 50px;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
-    .nav-content {
-        width: 80vw;
-    }
+@media only screen and (min-width: 1200px) {
+  .profile {
+    height: 150px;
+    width: 150px;
+  }
 
-    .screen-shots {
-        width: 300px;
-        height: 600px;
-    }
+  .slogan {
+    font-size: 50px;
+    width: fit-content;
+    align-self: center;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .project-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #scrollTo {
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    justify-self: center;
+    width: 400px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    justify-content: space-evenly;
+  }
+
+  .projects-container {
+    flex-direction: row;
+  }
+
+  .projects-container {
+    flex-wrap: wrap;
+    padding: 0 80px;
+
+    align-content: flex-start;
+  }
+
+  .project {
+    vertical-align: top;
+    width: 600px;
+    height: 750px;
+    margin: 30px 0 0 0;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  #quiz-app {
+    margin-top: 30px;
+  }
+
+  .project-info {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
+
+  .nav-content {
+    width: 80vw;
+  }
+
+  .slogan {
+    margin-left: calc(10vw - 10px);
+    font-size: 60px;
+  }
+
+  main {
+    padding: 0 40px;
+  }
+
+  .screen-shot-container {
+    min-width: 399px;
+    margin: auto;
+    max-width: 500px;
+    max-height: 400px;
+  }
+
+  .screen-shots {
+    width: 100%;
+  }
+
+  .content-container {
+    justify-content: space-between;
+  }
 }

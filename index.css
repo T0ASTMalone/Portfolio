@@ -173,8 +173,8 @@ a .button {
   display: flex;
   padding: 10px;
   background: rgb(0, 0, 0, 0)
-    url("../Wireframe/Project-screenshots/hero/moon-landing-small.jpg")
-    no-repeat center center fixed;
+    url("./Project-screenshots/hero/moon-landing-small.jpg") no-repeat center
+    center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -415,8 +415,8 @@ p {
 
 @media only screen and (min-height: 700px) and (min-width: 1200px) {
   .hero {
-    background: url("../Wireframe/Project-screenshots/hero/moon-landing.jpg")
-      no-repeat center center fixed;
+    background: url("./Project-screenshots/hero/moon-landing.jpg") no-repeat
+      center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

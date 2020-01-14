@@ -43,12 +43,24 @@ ul {
 #scrollTo {
   font-weight: bold;
   width: fit-content;
+  height: 100%;
 }
 
 #scrollTo li {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
-  padding: 0 0 0 5px;
+  padding: 10px;
+  height: 100%;
+  color: #6c877e;
+}
+
+#scrollTo li:hover a,
+#scrollTo li:hover,
+#mobile-scrollTo li:hover a,
+#mobile-scrollTo li:hover {
+  cursor: pointer;
+  background-color: #6c877e;
+  color: white;
 }
 
 .nav-content {
@@ -80,7 +92,6 @@ a:link {
 
 a:hover,
 a:focus {
-  color: white;
   transition: ease-in-out 1s;
   outline-color: #94eedb;
 }
@@ -152,6 +163,56 @@ a .button {
 .scrollLink,
 #scrollTo {
   margin: 0;
+}
+
+#scrollTo li {
+  height: 50px;
+}
+
+#scrollTo {
+  display: none;
+}
+
+#mobile-scrollTo {
+  transition: 1.5s ease-in-out;
+  margin-top: 50px;
+  width: 35%;
+  background-color: #090d19;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#mobile-scrollTo li {
+  text-align: center;
+  height: 40px;
+  padding: 0;
+}
+
+#mobile-scrollTo li a {
+  display: inline-block;
+  padding: 9px 20px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+  transition: 1.5s ease-in-out;
+}
+
+#menu-icon {
+  width: 25px;
+}
+
+.menu-button {
+  background-color: #090d19;
+  padding: 0;
+  border: none;
+  width: 25px;
+  height: 25px;
 }
 
 .scrollLink,
@@ -428,6 +489,13 @@ p {
 }
 
 @media only screen and (min-width: 718px) {
+  #mobile {
+    display: none;
+  }
+
+  #scrollTo {
+    display: inline;
+  }
   .skill {
     width: 80px;
   }
@@ -472,6 +540,9 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
+  .mobile-scrollTo {
+    display: hidden;
+  }
   .profile {
     height: 150px;
     width: 150px;

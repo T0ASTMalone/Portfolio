@@ -21,14 +21,31 @@
   </head>
   <body>
     <nav id="nav-bar">
-      <div class="nav-content">
+      <div class="nav-content" id="desktop">
         <h1 id="name">MIGUEL PONCE</h1>
-        <ul id="scrollTo">
+        <ul id="scrollTo" class="hidden">
           <li><a class="scrollLink" href="#about-me">About</a></li>
           <li><a class="scrollLink" href="#skills">Skills</a></li>
           <li><a class="scrollLink" href="#projects">Projects</a></li>
-          <li><a class="scrollLink" href="#contact">Contact</a></li>
+          <li><a class="scrollLink" href="#contact">Contact</a></li class="scrollLink">
         </ul>
+        <div class="mobile-nave" id="mobile">
+          <button id="menu-button" class="menu-button">
+            <img
+              src="./img/icons/icons8-menu.svg"
+              alt="menu-icon"
+              id="menu-icon"
+              class="icon"
+            />
+          </button>
+
+          <ul id="mobile-scrollTo" class="hidden">
+            <li><a class="scrollLink" href="#about-me">About</a></li>
+            <li><a class="scrollLink" href="#skills">Skills</a></li>
+            <li><a class="scrollLink" href="#projects">Projects</a></li>
+            <li><a class="scrollLink" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="hero">
@@ -367,7 +384,7 @@
                 href="https://github.com/T0ASTMalone "
                 rel="noopener noreferrer"
                 target="_blank"
-                ><img
+                ><im
                   class="icon contact-icon"
                   src="img/Technologies/github.svg"
                   alt="github-icon"
